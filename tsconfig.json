@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"outDir": "./dict/",
+		"sourceMap": true,
+		"checkJs": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"watch": true,
+		"target": "es5"
+	},
+	"include": [
+		"src/**/*"
+	]
+}
