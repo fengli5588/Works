@@ -1,0 +1,4 @@
+1. Clone repository
+2. edit your code
+3. commit
+4. push
