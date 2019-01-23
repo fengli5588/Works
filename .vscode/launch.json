@@ -15,7 +15,7 @@
 			"type": "node",
 			"request": "launch",
 			"name": "first",
-			"program": "${workspaceFolder}/dict/ComponentTest.js",
+			"program": "${workspaceFolder}/dict/Compose.js",
 			"preLaunchTask": "tsc: build - tsconfig.json"
 		}
 	]

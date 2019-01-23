@@ -3,11 +3,11 @@
 		"allowJs": true,
 		"outDir": "./dict/",
 		"sourceMap": true,
-		"checkJs": true,
+		"checkJs": false,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"watch": true,
-		"target": "es5"
+		"target": "es6",
 	},
 	"include": [
 		"src/**/*"

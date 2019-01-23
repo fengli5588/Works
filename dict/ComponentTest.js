@@ -1,16 +1,3 @@
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,42 +5,31 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 function Component(title) {
-    var html = function (children) { return "<div><h1>" + title + "</h1>" + children + "</div>"; };
-    return function (target) {
-        return /** @class */ (function (_super) {
-            __extends(class_1, _super);
-            function class_1() {
-                return _super !== null && _super.apply(this, arguments) || this;
+    let html = (children) => `<div><h1>${title}</h1>${children}</div>`;
+    return (target) => {
+        return class extends target {
+            render() {
+                return html(super.render());
             }
-            class_1.prototype.render = function () {
-                return html(_super.prototype.render.call(this));
-            };
-            return class_1;
-        }(target));
+        };
     };
 }
-var Greeter = /** @class */ (function () {
-    function Greeter() {
-    }
-    Greeter.prototype.render = function () {
+let Greeter = class Greeter {
+    render() {
         return "<img src='' />";
-    };
-    Greeter = __decorate([
-        Component("My Pic")
-    ], Greeter);
-    return Greeter;
-}());
-var Article = /** @class */ (function () {
-    function Article() {
     }
-    Article.prototype.render = function () {
-    };
-    Article = __decorate([
-        Component("My Articles")
-    ], Article);
-    return Article;
-}());
+};
+Greeter = __decorate([
+    Component("My Pic")
+], Greeter);
+let Article = class Article {
+    render() {
+    }
+};
+Article = __decorate([
+    Component("My Articles")
+], Article);
 // Componet("My Pic")(class Greeter{})
-var g = new Greeter();
+let g = new Greeter();
 console.log(g.render());
 //# sourceMappingURL=ComponentTest.js.map
