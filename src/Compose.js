@@ -25,3 +25,6 @@ tmp3 = compose((y) => y + 9, tmp2)
 result = compose((y) => y / 2, tmp3)   
 let v3 = result(20)
 console.log(v3)
+console.log("===================================")
+
+
