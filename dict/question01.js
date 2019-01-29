@@ -1,3 +1,8 @@
+function compose(f, g) {
+    return (x) => {
+        return f(g(x));
+    };
+}
 // 1. 有下方这样一个数字类型的二维数组，要求将元素纵向相加，得到的最终结果是一个一维数组
 let s1 = [
     [2, 6, 9],
@@ -8,15 +13,37 @@ let s1 = [
 function rotate(arr) {
     if (Array.isArray(arr), Array.isArray(arr[0])) {
         return arr.reduce((prev, cur) => {
-            cur.forEach((item, index) => prev[index].push(item));
+            console.log(prev, cur);
+            cur.forEach((item, index) => {
+                console.log("index=", index, ";item=", item);
+                prev[index].push(item);
+            });
             return prev;
         }, arr[0].map(x => []));
     }
     return arr;
 }
-function arr_add(arr) {
-    return arr.reduce((prev, cur) => prev + cur);
+function add_arr(arr) {
+    let result = [];
+    let tmp = 0;
+    arr.map((x) => {
+        tmp = arr_add(x);
+        result.push(tmp);
+    });
+    return result;
 }
+function arr_add(arr) {
+    return arr.reduce((prev, cur, i, arr) => {
+        console.log("Prev=", prev, "Cur=", cur);
+        return prev + cur;
+    });
+}
+//////////////////////////////////////////////////////////////
+let result_tmp = compose(add_arr, rotate);
+let result_list = result_tmp(s1);
+console.log("=============");
+// let arr0 = [1, 2, 3, 4]
+// arr_add(arr0)
 // 1. Find sublist and conosle.log
 // 2. Get value of index 0, index 1 and index 2
 // var i = 0
@@ -75,13 +102,6 @@ function arr_add(arr) {
 // 	"address": d.details.addr
 // }, d.details)
 // )
-data.map((d) => Object.assign({
-    "account": d.account,
-    "createTime": d.created,
-    "address": d.details.addr,
-    "hello": d.details.inner.att1,
-    "test": d.details.inner.att2
-}, d.details, d.details.inner));
 let data = [
     {
         "account": "test1",
@@ -92,7 +112,11 @@ let data = [
             "howlong": 3,
             "inner": {
                 "att1": "hello",
-                "att2": "richard"
+                "att2": "richard",
+                "inner02": {
+                    "att3": "att3",
+                    "att4": "att4",
+                }
             }
         }
     },
@@ -105,7 +129,11 @@ let data = [
             "howlong": 3,
             "inner": {
                 "att1": "hello",
-                "att2": "richard"
+                "att2": "richard",
+                "inner02": {
+                    "att3": "att3",
+                    "att4": "att4"
+                }
             }
         }
     },
@@ -118,7 +146,11 @@ let data = [
             "howlong": 3,
             "inner": {
                 "att1": "hello",
-                "att2": "richard"
+                "att2": "richard",
+                "inner02": {
+                    "att3": "att3",
+                    "att4": "att4",
+                }
             }
         }
     },
@@ -137,16 +169,27 @@ let data = [
 </div>
 
 */
-function objToStrMap(obj) {
-    let strMap = new Map();
-    for (let k of Object.keys(obj)) {
-        strMap.set(k, obj[k]);
-    }
-    return strMap;
-}
-//let result = objToStrMap({yes: true, no: false})
-let result = objToStrMap(data);
-for (let item of result.entries()) {
-    console.log(item[0], item[1]);
-}
+let my_data = data.map((d) => Object.assign({
+    "account": d.account,
+    "createTime": d.created,
+    "address": d.details.addr,
+    "att1": d.details.inner.att1,
+    "att2": d.details.inner.att2,
+    "att3": d.details.inner.inner02.att3,
+    "att4": d.details.inner.inner02.att4
+}, d.details, d.details.inner, d.details.inner.inner02));
+my_data.forEach(x => console.log(x));
+console.log("===============================");
+// function objToStrMap(obj) {
+// 	let strMap = new Map();
+// 	for (let k of Object.keys(obj)) {
+// 		strMap.set(k, obj[ k ]);
+// 	}
+// 	return strMap;
+// }
+// //let result = objToStrMap({yes: true, no: false})
+// let result = objToStrMap(data);
+// for (let item of result.entries()) {
+// 	console.log(item[ 0 ], item[ 1 ]);
+// }
 //# sourceMappingURL=question01.js.map
