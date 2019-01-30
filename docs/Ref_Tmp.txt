@@ -1,0 +1,161 @@
+﻿1. Window short cut
+https://zhidao.baidu.com/question/551539492.html
+
+
+2.
+"C:\Users\User\AppData\Local\JetBrains\PyCharm Community Edition 2018.3.1\bin\pycharm64.exe"
+
+
+3.
+C:\Users\User\AppData\Local\Programs\Python\Python37-32\Scripts
+
+
+4.npm install --save-dev electron
+
+
+5.
+谷歌服务助手 1.18.11.13 CRX for Chrome or Chromium
+https://www.crx4chrome.com/extensions/cgncbhnhlkbdieckbbmeppcefokppagh/
+
+https://www.crx4chrome.com/crx/86359/
+
+6. ts first app
+https://code.visualstudio.com/docs/languages/typescript
+
+7. De
+
+Component(
+   {
+       ...options
+    },
+     function () {
+
+     }
+)
+
+function Component(options, target) {
+	target.selector = options.selector;
+	return class extends target {
+		
+    }
+}
+
+function Component(options) {
+	return function (target) {
+		return class extends target {
+
+        }
+    }
+}
+
+8.
+function add(a, b) {
+    console.log("===>", a.toString());
+    return a(5, 10)
+}
+
+console.log(add((x, y) => {  return x * y }))
+
+@dd
+function add(n) {
+    return function (x) {
+        return n + x;
+    }
+}
+
+// Not allowed
+dd(function add(){})
+
+add(20)
+
+
+ƒ(x) {
+    return n + x;
+}
+let add20 = add(20)
+
+
+undefined
+add20(30)
+50
+add20(10)
+30
+add20(20)
+40
+add(10)
+ƒ(x) {
+    return n + x;
+}
+
+
+//////////////////////////
+ƒ add(n) {
+    return (x) => {
+        return n + x
+    }
+}
+
+
+//////////////////////////////////////////
+function outerBox(title) {
+    let html = (children) => `<div><h1>${ title }</h1>${ children }</div>`
+
+    return (yourComponent) => html(yourComponent)
+}
+undefined
+
+// Can be invoke like that   
+//outerBox("My pic")("<img src='' />")
+
+    (yourComponent) => html(yourComponent)
+let box = outerBox("My pic")
+undefined
+box("<img src='' />")
+"<div><h1>My pic</h1><img src='' /></div>"
+
+
+
+/////////////////////
+https://www.typescriptlang.org/play/index.html
+
+
+//////////////////////////////////////////////////////////////////////////
+function Component(title) {
+    let html = (children) => `<div><h1>${title}</h1>${children}</div>`
+
+    return (target) => {
+        return class extends target {
+            render() {
+                return html(super.render())
+            }
+        }
+    }
+}
+
+@Component("My Pic")
+class Greeter {
+    render() {
+        return "<img src='' />"
+    }
+}
+
+@Component("My Articles")
+class Article {
+    render() {
+
+    }
+}
+
+// Componet("My Pic")(class Greeter{})
+let g = new Greeter()
+
+console.log(g.render())
+//////////////////////////////////////////////////////////////////////////
+
+npm install -g typescript
+npm cache clean --force
+//////////////////////////////////////////////////////////////////////////
+1. https://www.stockbrokers.com/review/tradestation
+2. https://www.nerdwallet.com/blog/investing/tradestation-review/ 	
+3. https://thecollegeinvestor.com/19418/trade-station-review/
+
