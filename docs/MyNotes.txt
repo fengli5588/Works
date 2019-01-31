@@ -1,1 +1,8 @@
 1. Ctrl + , (search map)
+
+2. Alt + shift + F (format code)
+
+3. 
+	1. Selection
+	2. Ctrl + D
+	3. Change by Selection

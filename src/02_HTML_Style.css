@@ -1,0 +1,45 @@
+
+h1 {
+	color: purple;
+	text-align: center;
+}
+
+h2 {
+	color: gray;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
+	padding-bottom: 15px;
+}
+
+h2::after {
+	border-bottom: 5px solid #777;
+	content: "";
+	display: block;
+	border-radius: 3px;
+}
+
+h3 {
+	color: purple;
+}
+
+div {
+	color: pink
+}
+
+span {
+	font-weight: bold;
+}
+
+p {
+	color: black
+}
+
+strong {
+	font-weight: normal;
+}
+
+em {
+	font-style: normal;
+}
+	
