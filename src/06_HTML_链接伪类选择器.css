@@ -1,0 +1,24 @@
+a:link {
+	font-size: 42px;
+	color: gray;
+	font-weight: 600;
+}
+
+a:visited {
+	font-size: 42px;
+	color: orange;
+	font-weight: 600;
+}
+
+a:hover {
+	font-size: 42px;
+	color: red;
+	font-weight: 600;
+}
+
+a:active {
+	font-size: 42px;
+	color: green;
+	font-weight: 600;
+}
+
