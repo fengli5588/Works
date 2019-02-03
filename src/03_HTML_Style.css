@@ -33,7 +33,10 @@ span {
 }
 
 p {
-	color: black
+	color: black;
+	text-indent: 2em;
+	word-spacing: 10px;
+	letter-spacing: 10px;
 }
 
 strong {

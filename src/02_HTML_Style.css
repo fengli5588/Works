@@ -33,7 +33,8 @@ span {
 }
 
 p {
-	color: black
+	color: black;
+	line-height: 28px;
 }
 
 strong {
