@@ -1,3 +1,7 @@
+
+["lihan", "feng", "stephanie"].map(x => x.substr(0, 2).toUpperCase() + x.substr(2))
+
+
 function compose(f, g) {
 	return (x) => {
 		return f(g(x))
@@ -13,7 +17,6 @@ function compose(f, g) {
 
 var map_01 = ["lihan", "feng", "stephanie"].map(x => x.substr(0, 2).toUpperCase() + x.substr(2))
 
-
 // var a = b = " /var/www/site/Brand new   document.docx ";
 
 // console.log( a.split(' ').join('') );
@@ -23,10 +26,12 @@ var map_01 = ["lihan", "feng", "stephanie"].map(x => x.substr(0, 2).toUpperCase(
 // console.log(input)
 
 //var y = "This @is a #long $string. Alright, lets split this.";
-var str1 = "   lihan feng stephanie  "
+var str1 = "lihan feng stephanie"
 
 function trim(str) {
 	return str.trim()
+
+	"".trim()
 }
 
 function my_tokenizer(str) {
@@ -59,15 +64,15 @@ function my_to_upper(match) {
 }
 
 
-function my_concat_str(match) {
-	var str = ""
-	for (i = 0; i < match.length; i++) {
-		str += match[ i ].substr(0, 2)
-	}
-	return str
+// function my_concat_str(match) {
+// 	var str = ""
+// 	for (i = 0; i < match.length; i++) {
+// 		str += match[ i ].substr(0, 2)
+// 	}
+// 	return str
 
-	//return match.map((str) => str.substr(0, 2)).join('')
-}
+// 	//return match.map((str) => str.substr(0, 2)).join('')
+// }
 
 ////////////////////////////////////////////////////////////////////////
 // Lambda expression
@@ -80,9 +85,7 @@ function my_concat_str(match) {
 // 	//return match.map((str) => str.substr(0, 2)).join('')
 // }
 
-var tmp0 = compose(my_tokenizer, trim) 
-
-var tmp1 = compose(my_to_upper, tmp0);
+var tmp1 = compose(my_to_upper, my_tokenizer);
 res1 = tmp1(str1);
 //console.log(res1);
 
