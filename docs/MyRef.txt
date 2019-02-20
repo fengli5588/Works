@@ -2,3 +2,8 @@
 https://www.jianshu.com/p/bc6333705de7
 https://www.cnblogs.com/sqh17/p/8529401.html
 es6 array.reduce()详解  site:zhihu.com
+
+
+2. Install chrome as a default browser 
+    1. Install huazaierli.openchrome-0.0.3.vsix
+    2. Install plug in component view-in-browser 

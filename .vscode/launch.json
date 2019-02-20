@@ -18,5 +18,7 @@
 			"program": "${workspaceFolder}/dict/question02.js",
 			"preLaunchTask": "tsc: build - tsconfig.json"
 		}
+
+		
 	]
 }

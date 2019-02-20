@@ -1,0 +1,25 @@
+h1 {
+	color: rgba(22, 2, 7, 0.3);
+	font-size: 80px;
+	text-shadow: 10px 2px 1px rgba(22, 2, 7);
+}
+
+/* Direct Child Selector 
+https://learn.shayhowe.com/advanced-html-css/complex-selectors/
+*/
+/* h2 > p {
+	font-size:	14px;
+	color:		greenyellow;
+} */
+
+/* Descendant Selector */
+h2  p {
+	font-size:	14px;
+	color:		greenyellow;
+}
+
+/***
+Example	Classification	Explanation
+h2 ~ p	General Sibling Selector	Selects an element that follows anywhere after the prior element, in which both elements share the same parent
+h2 + p	Adjacent Sibling Selector	Selects an element that follows directly after the prior element, in which both elements share the same parent
+***/
