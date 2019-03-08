@@ -5,7 +5,7 @@
 
 .con .first {
 	flex: 3;
-	display: flex;
+	/* display: flex; */
 	background-color: blue;
 }
 
@@ -15,7 +15,7 @@
 
 .con .second {
 	flex: 7;
-	display: flex;
+	/* display: flex; */
 	background-color: yellow;
 }
 

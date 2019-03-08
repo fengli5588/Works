@@ -1,12 +1,7 @@
 // 禁止使用 for
 // 1. 平铺数组 flat
 // 有如下数组：
-let arrOne = [
-    [1, 4, 8],
-    5,
-    [9],
-    7
-];
+let arrOne = [[1, 4, 8], 5, [9], 7];
 // 输出以下结果:   [1, 4, 8, 5, 9, 7]
 function flat_arr(arr) {
     let result = [];
@@ -24,10 +19,7 @@ let result01 = flat_arr(arrOne);
 console.log(result01);
 console.log("============================");
 // 2. 有如下数组
-let arrTwo = [
-    1, 3,
-    2, 4
-];
+let arrTwo = [1, 3, 2, 4];
 // 要求通过转换后，分别得到下方的两个数组, 先纵加再横加
 // result one:
 // [
@@ -46,8 +38,7 @@ let arrTwo = [
 // @start - 开始数字
 // @end - 个数
 // @description: 指定开始数字 start，然后生成指定个数(count) 的数组
-function range(start, count) {
-}
+function range(start, count) { }
 // range()    =====>   []
 // range(3, 5)   ====>  [3, 4, 5, 6, 7]
 //range(2, 6) ===> [2, 3, 4, 5, 6, 7, 8]
@@ -62,4 +53,15 @@ let starCount = 6;
 // 	  <li>*</li>
 // 	  <li>*</li>
 // </ul>
+///////////////////////////////////////////////////////////
+function lam(x) {
+    return 100 + x;
+}
+function test_lam(x, f = x => 200 + x) {
+    return x + f(5);
+}
+let result = test_lam(10, x => {
+    return 100 + x;
+});
+console.log(result);
 //# sourceMappingURL=question02.js.map
