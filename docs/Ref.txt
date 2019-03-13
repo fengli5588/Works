@@ -20,4 +20,11 @@ https://www.crx4chrome.com/extensions/cgncbhnhlkbdieckbbmeppcefokppagh/
 https://www.crx4chrome.com/crx/86359/
 
 6. C++ online courses
-https://ke.qq.com/course/list/c++?sort=5&page=1
+  1. https://ke.qq.com/course/list/c++?sort=5&page=1
+  2. https://www.jikexueyuan.com/course/pythonbase/
+  达类
+  3. http://c.tedu.cn/teachers/
+
+7. Python study
+  1. 1-2_V4.1->5.Object Management->Printer
+  2. 1-2_V4.1->5.[list, tuple, set, dict]->斗地主 
