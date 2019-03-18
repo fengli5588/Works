@@ -28,3 +28,10 @@ https://www.crx4chrome.com/crx/86359/
 7. Python study
   1. 1-2_V4.1->5.Object Management->Printer
   2. 1-2_V4.1->5.[list, tuple, set, dict]->斗地主 
+
+8. My Resume
+  1. Yanson.Chen@hudson.com
+  2. della.wu@jcconsulting.sg 
+
+9. test
+

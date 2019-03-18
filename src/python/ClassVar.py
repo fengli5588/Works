@@ -24,7 +24,6 @@ test.nums.append(2)
 test.nums.append(3)
 test.kind = "cat"
 test.add_class_item02(90)
-
 print("Test.kind=", Test.kind)
 print("test_instance.kind=", test.kind)
 print(test.__dict__)
