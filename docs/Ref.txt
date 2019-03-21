@@ -33,5 +33,10 @@ https://www.crx4chrome.com/crx/86359/
   1. Yanson.Chen@hudson.com
   2. della.wu@jcconsulting.sg 
 
-9. test
+9. dumpbin usage
+https://www.cnblogs.com/gune/p/6219768.html 
+
+
+
+
 

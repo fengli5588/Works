@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78eb48a0-2464-4e88-8394-6ffce108f39a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../docs/Ref.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../docs/Ref.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_ThreadingSimple.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_ThreadingSimple.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_ThreadingEnum.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_ThreadingEnum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassVar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enumerate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GlobalVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/GlobalVar.py" afterDir="false" />
-    </list>
+    <list default="true" id="78eb48a0-2464-4e88-8394-6ffce108f39a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GlobalVar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="168">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -82,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="25" />
     <option name="width" value="1400" />
@@ -254,14 +247,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3290461" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -306,8 +300,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GlobalVar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
